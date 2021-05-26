@@ -1,0 +1,13 @@
+alter table mcc_article add foreign key (art_author) references mcc_player (pl_identifier);
+alter table mcc_email_token add foreign key (et_player) references mcc_player (pl_identifier);
+alter table mcc_game add foreign key (gm_player_white) references mcc_player (pl_identifier);
+alter table mcc_game add foreign key (gm_player_black) references mcc_player (pl_identifier);
+alter table mcc_game_cache add foreign key (gc_game) references mcc_game(gm_id);
+alter table mcc_history_connection add foreign key (hc_identifier) references mcc_player (pl_identifier);
+alter table mcc_history_score add foreign key (hs_identifier) references mcc_player (pl_identifier);
+alter table mcc_invitation add foreign key (iv_player) references mcc_player (pl_identifier);
+alter table mcc_move add foreign key (mv_game) references mcc_game (gm_id);
+alter table mcc_note add foreign key (nt_owner) references mcc_player (pl_identifier);
+alter table mcc_note add foreign key (nt_game) references mcc_game (gm_id);
+alter table mcc_player_portrait add foreign key (pp_player) references mcc_player (pl_identifier);
+alter table mcc_article add index catlang_ix (art_category, art_lang);

@@ -1,0 +1,27 @@
+INSERT INTO `mcc_player` VALUES ('robot_gnuchess_01','robotpwd','GNU Chess 5.07',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',124,9,107,1320,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_gnuchess_02','robotpwd','GNU Chess 5.07',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',47,5,39,1359,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_gnuchess_03','robotpwd','GNU Chess 5.07',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',28,3,21,1307,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_gnuchess_04','robotpwd','GNU Chess 5.07',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',21,5,8,1333,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_gnuchess_05','robotpwd','GNU Chess 5.07',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',15,4,6,1315,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_gnuchess_06','robotpwd','GNU Chess 5.07',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',19,4,8,1328,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_gnuchess_07','robotpwd','GNU Chess 5.07',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',41,15,11,1397,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_phalanx_01','robotpwd','Phalanx XXII',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',70,8,46,1308,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_phalanx_02','robotpwd','Phalanx XXII',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',39,7,36,1297,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_phalanx_03','robotpwd','Phalanx XXII',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',39,5,25,1245,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_phalanx_04','robotpwd','Phalanx XXII',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',18,3,11,1330,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_phalanx_05','robotpwd','Phalanx XXII',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',16,3,12,1290,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_phalanx_06','robotpwd','Phalanx XXII',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',17,5,11,1343,'01',1,0,1,1);
+INSERT INTO `mcc_player` VALUES ('robot_phalanx_07','robotpwd','Phalanx XXII',NULL,NULL,NULL,NULL,'2005-02-25 13:53:39',28,8,13,1331,'01',1,0,1,1);
+
+INSERT INTO `mcc_article` VALUES (null,'2005-09-18 13:45:04','EN','alcibiade','tips','You can find new opponents in the rankings page.','');
+INSERT INTO `mcc_article` VALUES (null,'2005-09-18 13:45:04','EN','alcibiade','tips','During a game, you can offer a draw to your opponent by enabling the checkbox \'Offer Draw\'. On his next move, your opponent will be able to accept your offer or keep on playing.','');
+INSERT INTO `mcc_article` VALUES (null,'2005-09-18 13:45:04','EN','alcibiade','tips','If someone opened a game that\nyou don\'t want to play, you can delete it.<br />\nTo do so, simply enter <strong>DELETE</strong> instead\nof your first move.<br />\nThis is only possible before you play your first move.<br />\nScores will keep unchanged.','');
+INSERT INTO `mcc_article` VALUES (null,'2005-09-18 13:45:04','EN','alcibiade','tips','If you find yourself in a position that you think\nis desperate, you can let the game to your\n opponent by entering \'resign\' as a move.','');
+INSERT INTO `mcc_article` VALUES (null,'2005-09-18 13:45:04','EN','alcibiade','tips','You can gain more points by winning\ngames against players having more points than you.','');
+INSERT INTO `mcc_article` VALUES (null,'2005-09-18 13:45:04','EN','alcibiade','tips','If you encounter any problem, or have any question,\ndon\'t hesitate to contact us by mail using the link below.<br />\nYou can also send us your features requests.','');
+INSERT INTO `mcc_article` VALUES (null,'2005-09-18 13:45:04','EN','alcibiade','tips','GnuChess and Phalanx are chess engines you can play against.\nThey play twice an hour and their number represent their\nreflection depth.','');
+INSERT INTO `mcc_article` VALUES (null,'2005-09-18 13:45:04','EN','alcibiade','tips','Using the search feature you can find and view any game played\non the server. The archives contains all finished games.','');
+INSERT INTO `mcc_article` VALUES (null,'2005-09-24 11:47:00','EN','alcibiade','tips','Use the notes box to keep track of your ideas. It is really useful\nwhen playing simultaneous games.<br />\nIt is confidential since you\'re the only one able to read them.',NULL);
+INSERT INTO `mcc_article` VALUES (null,'2005-11-28 23:12:00','EN','alcibiade','tips','You can change your email notification address if necessary.<br />\nGo to <cite>Your Profile / Change Your Email Settings</cite>.<br />\nBy doing so, you can also select the desired time lapse before being\nnotified when it\'s your turn to play.\n',NULL);
+INSERT INTO `mcc_article` VALUES (null,'2006-04-05 00:00:00','EN','alcibiade','tips','You can follow the progress of your invitations and know if your\nfriends opened the message you sent or not.<br />\nAlternatively, you\'ll be able to resend your invitation.',NULL);
+INSERT INTO `mcc_article` VALUES (null,'2006-04-05 00:00:00','EN','alcibiade','tips','Click on the link <cite>Invite a friend</cite> in the top menu\nto send invitations to your friends.',NULL);
