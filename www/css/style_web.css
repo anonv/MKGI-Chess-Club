@@ -1,0 +1,61 @@
+body {
+	background-color: #474653;
+	background-image: url('../images/frame_background.png');
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+
+/********** Page Layout Items ********************************/
+
+#pageframe {
+	margin-left: auto;
+	margin-right: auto;
+	width: 880px;
+}
+
+#pagetopA {
+	background-image: url('../images/frame_top_a.png');
+	height: 49px;
+}
+
+#pagetopB {
+	background-image: url('../images/frame_top_b.png');
+	height: 79px;
+}
+
+#pagetopC {
+	background-image: url('../images/frame_top_c.png');
+	height: 19px; /* 33px - 14px */
+	padding: 14px 24px 0 24px;;
+	margin: 0;
+}
+
+#pagetopD {
+	background-image: url('../images/frame_top_d.png');
+	height: 20px; /* 24 - 4px */
+	padding: 4px 24px 0 24px;;
+}
+
+#pagebody_ {
+	background-image: url('../images/frame_body_b.png');
+}
+
+#pagebody {
+	background-image: url('../images/frame_body_a.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 400px;
+}
+
+html>body #pagebody {
+	height: auto;
+	min-height: 400px;
+}
+
+#pagefooter {
+	background-image: url('../images/frame_footer_a.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 66px;
+}
+

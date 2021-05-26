@@ -1,0 +1,556 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+
+p, td {
+	font-size: 9pt;
+}
+
+body, p, td, div, li {
+	color: #778;
+}
+
+li {
+	list-style-type: square;
+}
+
+div {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin-top: 1em;
+}
+
+table, td {
+	border-width: 0px;
+	border-style: none;
+	border-collapse: collapse;
+	padding: 0;
+	text-align: left;
+}
+
+img {
+	border-width: 0px;
+}
+
+input, textarea, select {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #F8F8F8;
+	color: #778;
+	border-width: 1px;
+	/* For a plonelike design: border: 1px solid #778; */
+	font-size: 9pt;
+}
+
+.header     { font-size: 10pt; color: #778; }
+.warning    { font-size: 9pt; color: #dd2222; }
+.tiny       { font-size: 8pt; color: #778; }
+
+.center {
+	margin: 0 auto 0 auto;
+}
+
+a:link, a:visited, a:active { 
+	text-decoration: none;
+	color: #8888ff;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #6666dd;
+}
+
+/********** Page Layout Items ********************************/
+
+#pageframe {
+}
+
+#pagetopA {
+}
+
+#pagetopB {
+}
+
+#pagetopC {
+}
+
+#pagetopD {
+}
+
+#pagebody_ {
+}
+
+#pagebody {
+	padding-top: 8px;
+	padding-bottom: 16px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+#pagefooter {
+	padding: 12px 24px 0 24px;
+}
+
+/********** Page Elements ************************************/
+
+#loginfaq {
+	width: 500px;
+	margin-left: 8px;
+}
+
+#loginfaq dt {
+	font-weight: bold;
+	text-align: left;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#loginfaq dd {
+	text-align: justify;
+	padding-left: 12px;
+}
+
+
+/* Top index userbar */
+
+table.userbar {
+}
+
+td.userbar_left {
+	text-align: left;
+	padding: 2px 24px 2px 4px;
+}
+
+td.userbar_right {
+	text-align: right;
+	padding: 2px 4px 2px 4px;
+}
+
+/* Top menubar */
+
+div.menubar {
+	text-align: center;
+	color: silver;
+}
+
+#pagetopD a:link, #pagetopD a:hover, #pagetopD a:visited, #pagetopD a:active {
+	color: white;
+}
+
+/* Footer */
+
+#pagefooter a:link, #pagefooter a:hover, #pagefooter a:visited, #pagefooter a:active {
+	color: #444490;
+}
+
+/* Games List Table */
+
+p.games_title {
+	font-weight: bold;
+	text-align: center;
+}
+
+a.games_title {
+	color: #778;
+}
+
+table.games {
+	margin: 0 auto 0 auto;
+}
+
+td.games_title {
+	font-weight: bold;
+	padding: 2px 6px 2px 2px;
+	border-bottom: 1px solid #778;
+}
+
+td.games_data {
+	padding: 3px 2px 3px 2px;
+	background: #F2F2F2;
+}
+
+td.games_pager {
+	padding: 5px 2px 5px 2px;
+	background: #F8F8F8;
+	text-align: center;
+}
+
+span.game_winner {
+	font-weight: bold;
+}
+
+/* Move history */
+
+table.movehistory {
+	border-collapse: collapse;
+}
+
+td.movehistory_count_odd, td.movehistory_count_even,
+td.movehistory_move_odd, td.movehistory_move_even,
+td.movehistory_badmove_odd, td.movehistory_badmove_even {
+	padding: 2px 6px 2px 6px;
+}
+
+td.movehistory_count_odd, td.movehistory_count_even {
+	font-size: 8pt;
+	text-align: right;
+	font-weight: bold;
+}
+
+td.movehistory_move_odd, td.movehistory_move_even,
+td.movehistory_badmove_odd, td.movehistory_badmove_even {
+	font-size: 8pt;
+	text-align: left;
+}
+
+td.movehistory_mark_even,
+td.movehistory_count_even, td.movehistory_move_even {
+	background: #F8F8F8;
+}
+
+td.movehistory_mark_odd,
+td.movehistory_move_odd, td.movehistory_count_odd {
+	background: #E8E8F8;
+}
+
+td.movehistory_badmove_even {
+	background: #F8D8D8;
+}
+
+td.movehistory_badmove_odd {
+	background: #E8C8C8;
+}
+
+/* News items */
+
+dl.news {
+	width: 500px;
+	padding: 0;
+	margin: 0;
+}
+
+dt.news {
+	padding: 5px;
+}
+
+dd.news {
+	padding: 5px;
+	font-size: 8pt;
+	margin-left: 32px;
+}
+
+p.news_signature {
+	text-align: left;
+	font-size: 8pt;
+	padding: 6px 6px 6px 200px;
+	font-style: italic;
+	margin: 0;
+}
+
+/* New Game table form */
+
+table.newgame {
+}
+
+td.newgame_cell {
+	vertical-align: middle;
+	text-align: center;
+	padding: 16px;
+}
+
+/* Profile table form */
+
+table.profile {
+	margin: 8px 0 8px 0;
+	border: 1px solid #778;
+	border-collapse: separate;
+}
+
+td.profile_label {
+	padding: 6px 6px 6px 16px;
+	background: #f2f2f2;
+	border: 1px solid #d2d2d2;
+	vertical-align: middle;
+	font-weight: bold;
+	text-align: right;
+}
+
+td.profile {
+	padding: 6px 16px 6px 6px;
+	border: 1px solid #e2e2e2;
+	vertical-align: middle;
+}
+
+img.profile_portrait {
+	border-top:    1px solid #BBBBCC;
+	border-left:   1px solid #BBBBCC;
+	border-right:  1px solid #666677;
+	border-bottom: 1px solid #666677;
+}
+
+/* Invitations table */
+
+table.invitations {
+}
+
+td.invitation_title {
+	font-weight: bold;
+	padding: 3px 9px 3px 9px;
+}
+
+td.invitation_data {
+	padding: 3px 9px 3px 9px;
+}
+
+/* Profile edition form */
+
+table.profile_edit {
+	margin: 6px 0 6px 0;
+}
+
+td.profile_edit {
+	padding: 6px 16px 6px 6px;
+	vertical-align: middle;
+}
+
+/* Player list table */
+
+table.playerlist {
+}
+
+td.playerlist_title {
+	font-weight: bold;
+	padding: 5px 32px 5px 5px;
+}
+
+td.playerlist {
+	padding: 2px 10px 2px 5px;
+}
+
+td.playerlist_abstract {
+	padding: 15px;
+	font-size: 7pt;
+}
+
+
+/* Subscribe table form */
+
+table.subscribe {
+}
+
+td.subscribe {
+	padding: 12px 6px 8px 6px;
+}
+
+
+/* Generic box */
+/*
+table.mccbox {
+	border: 1px solid #778;
+	background-color: #F8F8F8;
+}
+
+td.mccbox_body {
+	padding: 2px;
+}
+
+td.mccbox_title {
+	background-color: #778;
+	background-color: #AAAAB0;
+	color: #F8F8F8;
+	padding: 2px;
+}
+*/
+table.mccbox {
+}
+
+td.mccbox_title {
+	font-weight: bold;
+	padding: 2px 10px 2px 10px;
+	font-family: monospace;
+	border-bottom: 1px solid #778;
+}
+
+td.mccbox_body {
+	padding: 2px 5px 2px 5px;
+	background: #F2F2F2;
+	text-align: justify;
+}
+
+/* Search box */
+
+table.search {
+}
+
+td.search_left {
+	padding: 4px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+td.search_right {
+	padding: 4px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+td.search_middle {
+	padding: 4px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+input.search_text {
+	width: 200px;
+}
+
+select.search_select {
+	width: 200px;
+}
+
+/* Rankings box */
+
+table.rankings {
+}
+
+td.rankings_selected {
+	background: #E2E2E2;
+	padding: 2px 10px 2px 10px;
+	font-family: monospace;
+}
+
+td.rankings {
+	padding: 2px 10px 2px 10px;
+	font-family: monospace;
+	background: #F2F2F2;
+}
+
+td.rankings_title {
+	font-weight: bold;
+	padding: 2px 10px 2px 10px;
+	font-family: monospace;
+	border-bottom: 1px solid #778;
+}
+
+td.rankings_pager {
+	padding: 2px 10px 2px 10px;
+	font-family: monospace;
+	background: #F8F8F8;
+	text-align: center;
+}
+
+/* BOARD ELEMENTS */
+
+div.chatter {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-style: italic;
+	width: 260px;
+}
+
+/* Menace Bars */
+
+
+div.menace_bars { border: 1px solid #808080; background: #F0F0F0; margin-top: 4px; }
+div.menace_barw { text-align: center; font-size: 7pt; color: white; border: 1px solid #0000FF; background: #A0A0FF;
+		margin: 2px; padding: 0px; }
+div.menace_barb { text-align: center; font-size: 7pt; color: white; border: 1px solid #FF0000; background: #FFA0A0;
+		margin: 2px; padding: 0px; }
+
+/* The board itself */
+
+textarea.playercomment, textarea.playernote {
+	width: 100%;
+	height: 100px;
+}
+
+table.chessboard {
+	border-collapse: separate;
+}
+
+td.board_cell_coordinate {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	padding: 4px;
+}
+
+
+/*
+ * Standard board styles
+ */
+td.b_std_white { background: #FFFFFF; border: 1px solid #FFFFFF; }
+td.b_std_black { background: #CCCCCC; border: 1px solid #CCCCCC; }
+
+/*
+ * Piece path board styles for black side
+ */
+td.b_path_b0_white { background: #EEEEFF; border: 1px solid #EEEEFF; }
+td.b_path_b1_white { background: #E8E8FF; border: 1px solid #E8E8FF; }
+td.b_path_b2_white { background: #DEDEFF; border: 1px solid #DEDEFF; }
+td.b_path_b3_white { background: #D8D8FF; border: 1px solid #000080; }
+td.b_path_b0_black { background: #BBBBCC; border: 1px solid #BBBBCC; }
+td.b_path_b1_black { background: #B8B8CC; border: 1px solid #B8B8CC; }
+td.b_path_b2_black { background: #AFAFCC; border: 1px solid #AFAFCC; }
+td.b_path_b3_black { background: #A8A8CC; border: 1px solid #000080; }
+
+/*
+ * Piece path board styles for white side
+ */
+td.b_path_w0_white { background: #EEFFEE; border: 1px solid #EEFFEE; }
+td.b_path_w1_white { background: #E8FFE8; border: 1px solid #E8FFE8; }
+td.b_path_w2_white { background: #DEFFDE; border: 1px solid #DEFFDE; }
+td.b_path_w3_white { background: #D8FFD8; border: 1px solid #008000; }
+td.b_path_w0_black { background: #BBCCBB; border: 1px solid #BBCCBB; }
+td.b_path_w1_black { background: #B8CCB8; border: 1px solid #B8CCB8; }
+td.b_path_w2_black { background: #AFCCAF; border: 1px solid #AFCCAF; }
+td.b_path_w3_black { background: #A8CCA8; border: 1px solid #008000; }
+
+/*
+ * Browser details box
+ */
+
+#movedetails {
+	padding: 6px;
+	height: 200px;
+}
+
+#movedetails dt {
+	text-align: left;
+}
+
+#movedetails dd {
+	text-align: left;
+	margin: 8px 8px 8px 20px;
+}
+
+/*
+ * AdSense
+ */
+
+.adsenseBanner {
+	margin-top: 18px;
+}
+
+.adsenseSidebar {
+	margin-top: 18px;
+}
+
+/*
+ * Inline tip
+ */
+
+div.inline_tip {
+	padding: 12px;
+	margin: 12px;
+	border: 1px dotted #778;
+	background: #F2F2F2;
+	font-style: italic;
+	font-size: smaller;
+	text-align: justify;
+}
