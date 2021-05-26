@@ -1,0 +1,62 @@
+<?php
+
+$mcc_server_name  = "My MKGI Chess Club";
+$mcc_server_email = "contact@myclub.com";
+$mcc_server_from  = "$mcc_server_name <$mcc_server_email>";
+$mcc_server_root  = "http://www.myclub.com/";
+
+$mcc_admin_host   = "127.0.0.1";
+
+$mysql_host   = "127.0.0.1";
+$mysql_user   = "chessuser";
+$mysql_pass   = "chesspass";
+$mysql_db     = "chessdb";
+
+$mysql_prefix = "mcc_";
+$mysql_table_player          = $mysql_prefix . "player";
+$mysql_table_player_portrait = $mysql_prefix . "player_portrait";
+$mysql_table_game            = $mysql_prefix . "game";
+$mysql_table_game_cache      = $mysql_prefix . "game_cache";
+$mysql_table_move            = $mysql_prefix . "move";
+$mysql_table_note            = $mysql_prefix . "note";
+$mysql_table_article         = $mysql_prefix . "article";
+$mysql_table_invitation      = $mysql_prefix . "invitation";
+$mysql_table_email_token     = $mysql_prefix . "email_token";
+$mysql_table_h_score         = $mysql_prefix . "history_score";
+$mysql_table_h_connection    = $mysql_prefix . "history_connection";
+
+/*
+ * These settings are used to define where phalanx and gnuchess are
+ * located on your system. If you don't plan to use realtime robots play,
+ * just leave these as null.
+ *
+ * Example:
+ *   $engine_gnuchess = '/usr/games/gnuchess';
+ *   $engine_phalanx  = '/usr/games/phalanx';
+ */
+
+$engine_gnuchess = NULL;
+$engine_phalanx  = NULL;
+
+/*
+ * If this is true, the login form won't appear
+ */
+// $maintenance_mode = TRUE;
+
+$log_debug = FALSE;
+
+/*
+ * Put Google AdSense scripts here if you want to advertise on the site.
+ */
+
+$adsense_banner  = "";
+$adsense_sidebar = "";
+
+/*
+ * Dynamic xml queries interval for ajax in milliseconds
+ */
+
+$mcc_ajax_interval_fast = 10000;
+$mcc_ajax_interval_slow = 60000;
+
+?>
