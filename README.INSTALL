@@ -42,8 +42,7 @@ Game Analysis Setup
 ===================
 
 To enable full game analysis feature in history browser, you have to download
-the analysis script from SVN at:
-https://mkgichessclub.svn.sourceforge.net/svnroot/mkgichessclub/ChessTeacher/
+the analysis script from svn folder.
 
 Install the analysis.py file on your system. You can customize the first lines to
 match with your system.
