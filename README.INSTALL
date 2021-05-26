@@ -1,0 +1,68 @@
+
+Requirements
+============
+
+ - PHP enabled web server (5.0 or higher required)
+ - MySQL database (4.0 or higher required)
+ - GnuChess and/or Phalanx (to enable robots)
+ - Python (to enable robots)
+
+Server Setup
+============
+
+Extract the files to a directory accessible by the web server. The files that
+must be served are in the www directory.
+
+Create an account and a database on the MySQL server
+Run the create_database.sql script to create all the tables.
+Run the insert_initial_data.sql script to populate the database.
+
+If you are upgrading from a previous version, instead of running the
+create_database/insert_initial_data scripts, run the migration scripts
+provided for your version..
+
+Copy local_settings.php_DIST to local_settings.php.
+Open it and customise it to match your settings.
+
+
+Notification Setup
+==================
+
+To enable periodic notification and other regular tasks, add the
+following lines to your crontab:
+
+21    *       *       *       *       cd /PATH_TO_CHESSCLUB && /usr/bin/php5 admin_notification.php >/dev/null 2>&1
+30    2       *       *       *       cd /PATH_TO_CHESSCLUB && /usr/bin/php5 admin_flag_active_players.php >/dev/null 2>&1
+35    9       *       *       *       cd /PATH_TO_CHESSCLUB && /usr/bin/php5 admin_remind_subscription.php >/dev/null 2>&1
+
+Alternatively, you can add these rules in a file in /etc/cron.d
+
+
+Game Analysis Setup
+===================
+
+To enable full game analysis feature in history browser, you have to download
+the analysis script from SVN at:
+https://mkgichessclub.svn.sourceforge.net/svnroot/mkgichessclub/ChessTeacher/
+
+Install the analysis.py file on your system. You can customize the first lines to
+match with your system.
+
+Then add a periodic crontab item like this:
+31    *       *       *       *       python /usr/local/mkgichessclub/ChessTeacher/analyze.py <db_host> <db_user> <db_pwd> <db_base> >/dev/null 2>&1
+
+
+Robots Setup
+============
+
+If you have admin rights on your web server, it should not be too complicated for you
+to install gnuchess and/or phalanx chess engines. Once they are installed, update your
+local_settings.php file to set the path to the executables. Once these paths are set,
+the robots will play instantly.
+
+Be careful though that robot identifiers should contain the name of the engine and end
+with the desired thinking depth. If you used the insert_initial_data.sql script, you
+shouldn't have any issue with this.
+
+
+If you have any question, contact us at contact@chess.mkgi.net

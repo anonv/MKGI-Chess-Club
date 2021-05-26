@@ -1,0 +1,46 @@
+Important BugFixes
+==================
+
+
+Feature requests
+================
+
+ - Send private messages / Profile edit allow messages
+ - Allow password retrieval by email address
+ - Render '=' symbols besides moves which included a draw offer
+ - Implement mouse-driven en-passant
+ - Improve move inputs: create buttons/checkboxes for draw/resign/...
+ 	management (partially done)
+ - Secure possible remaining exploits in chess.php
+ - Display an online players list on the homepage
+ - Display number of online players on the login screen ??
+ - Display chat messages in history browser (only for people participating)
+ - Create an overview page accessible to visitors not subscribed yet.
+ - Mettre des fleches de tendance dans le classement
+ - Mettre un attribut dans les parties pour definir le temps avant abandon
+ - Lors du premier coup, proposer un bouton pour refuser la partie...
+ - Limite max dans les recherches de parties
+ - Mettre une limite aux nombres d'identifiants par adresse email ?
+ - Critere de date dans les recherches
+ - Mise en place d'un email d'accueil suite a la validation d'un
+	nouvel identifiant: Bienvenue....
+ - I18n and L10n to French and German
+ - Update online help
+ - Messages d'infos sur page index + Flux RSS
+ - Combo pour choisir les vues du plateau dans chess.php
+ - Unify chess/browser views
+ - Optimiser les meta pour le referencement (resume du site)
+
+
+Robots requests
+====================================
+
+ - Implement draw offer interface
+ - Display human readable informations in chat box
+
+Autres taches
+=============
+
+ - Manage a newsletter
+ - Links exchange
+ - Bug followup

@@ -1,0 +1,164 @@
+MKGI Chess Club Versions History:
+
+1.0.0: March 1st 2005
+
+1.1.0: May 1st 2005
+   - Added user profile management
+
+1.1.1: May 13th 2005
+   - Resignation archival fix
+   - Notification can now be disactivated
+   - Long idle game can no longer be deleted by a
+	player not participating in the game.
+   - Display contact email address on every page
+
+1.1.2: June 6th 2005
+   - Paged the rankings and games list
+   - Added previous opponents scores in the profile
+   - Added a notification status enabled/suspended/disabled
+   - Bugfixes:
+	Must purge Game legacy cache when updating the 'draw' flag.
+	Undo delay variable use
+	
+1.1.3:
+   - Fixed the player ranking page selection formula
+   - Added a subscription reminder sent one day and one week after subscription
+   - Added player activity flag
+   - Ranking now only shows active players.
+   - Ranking can now select humans/robots/both
+   - Profile now shows last 5 games
+   - Profile now shows current games
+   - Score graph background is now a gradient 
+   - Gameslist template now accepts paging and condensed flags
+
+1.1.4: Aug 9th 2005
+   - Local settings are now in a separate source file which is not
+       archived in the CVS tree.
+
+1.2.0: Sept 20th 2005
+   - Abandoned games deletion bug corrected. A game could not be deleted
+   	twice anymore.
+   - Search feature reorganized
+   - Don't display page build times for non-admin players
+   - Display always full text moves description
+   - _moves_cache in Game is now an array of associative arrays (replaced
+   	mysql_fetch_row by mysql_fetch_assoc)
+   - Fixed Float functions rounding which lead to points loss in score updates.
+   - Game creation system updated. No combos anymore...
+   - Tips section added
+   - En passant bug fixed
+
+1.2.1: Nov 29th 2006
+   - Castling texts updated.
+   - Show 15 games per page in the games list
+   - Added summaries to many HTML tables.
+   - Empty notes allowed again
+   - Game cache in a specific table
+   - Validation tokens is a specific table
+   - Email notification parameters can be customized
+   - Maintenance mode added
+
+1.2.2:
+   - Graphs over 1year display years instead of months
+   - Corrected a positional draw bug in browser module
+   - chess and browser redirect to home if no valid gameid found
+   - Check length of input text in chat and notes
+   - Display dual score curves in the newgame screen
+
+1.2.3:
+   - Invitation system
+
+1.2.4:
+   - Corrected the double draw refusal bug
+   - Corrected the refresh bug upon draw/resign/delete
+   - Corrected positional draw upon 2 repeats and undo
+   - Use mcc_get_page_parameter wherever possible
+
+1.2.5:
+   - Added a search link besides every encountered opponent in
+   	the player profile view.
+   - Display full informations for games in profile view
+   - Created a Graph class in mcc_graph to create generic 
+   	date/data graph images support
+   - In browser view, the rotate board button didn't work. This
+   	was fixed
+   - Drop delay updated from 2 weeks to one month
+   - Fixed a possible exploit when offering draw against a robot
+
+1.3.0:
+   - PHP5 Compatible
+   - Replaced NULL assigments to $this by exceptions
+   - Fetch time from database to check for move age
+
+1.3.1:
+   - Corrected player validation bug
+
+1.4.0:
+   - Improved move history template
+   - New draw offer management
+
+1.4.1:
+   - BugFix: Delete feature was broken and was fixed
+   - BugFix: Player stats in top bar are now updated at once when
+   	a game is deleted or won.
+   - Code cleanup: handleDelete procedure was inlined in chess module.
+
+1.4.2:
+   - Season specific splash screens for Xmas and new year
+   - Dynamic copyright year in page footer
+   - Fixed a possible security hole: the opponent could play a move
+   	instead of the player.
+
+1.4.3:
+   - Added a constant to manage the number of newbies / suggested players
+   - Fixed a bug that prevented the draws to be counted in player scores
+
+1.5.0:
+   - Updated escape string from <? to <?php
+   - Fixed a stalemate detection bug
+   - Robots can play in realtime
+   - Color on browser's last moves
+   - Fixed the PGN game export
+   - Added attacked figure name in move description
+   - Updated maintenance mode to logout prevent any connected behaviour
+
+1.5.1:
+   - Fixed robots draw flag that caused them to reply to a draw offer with
+   	another offer
+   - Fixed board flickering in history browser view
+   - Fixed draw detection when the kings are alone on the board
+   - Weakened Phalanx at depth level 1 by using the -e command line flag
+   - Chess screen auto refreshing every 30s until opponent moves
+   - Fixed lost password screen which was bugging on unknown username imput.
+   - Fixed a board color highlighting problem on last moves of a closed game
+
+1.6.0:
+   - Updated database structure to include move evluations
+   - Display comments in game browser view
+   - Display histmark besides the current move in the list
+   - Re-organized the directory structure
+   - Implemented Move class to handle moves and modified Game methods
+   - Bundled initial database data script to fill robot players and tips
+
+1.6.1:
+   - Fixed the notification script broken by the new Move class framework
+   - Fixed undo flag when a move has just been played
+   - Drag'n'drop on chess board
+
+2.0.0:
+   - New web design
+   - Lightbox JS support for screenshots
+   - Better CSS management
+   - Several bugfixes
+
+2.1.0:
+   - Updated Help page layout
+   - News articles limited to 1 month in club view
+   - Improved intial db data script
+   - Complete chess board Drag'n'Drop
+   - Mixed mode board input, the user can either d'n'd or single-click.
+   - Default news articles displayed is now 2
+
+2.2.0:
+   - Added AdSense slots
+   - Added automatic board refresh on player move
